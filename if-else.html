@@ -14,12 +14,14 @@
     <h1>Practicas con if-else</h1>
 
     <script>
-        let numeros = prompt("ingresa un numero");
+        // Calificación de una nota:
 
-        if (numeros % 2 === 0) {
-            console.log("este es el numero " + numeros + " es par");
+        let nota = prompt("ingresa el resultado de la nota entre 0 y 100");
+
+        if (nota >= 60) {
+            console.log("Tu nota es " + nota + " Aprobado ");
         } else {
-            console.log("este es el numero " + numeros + " es impar");
+            console.log("tu nota es " + nota + " Reprobado ");
         }
     </script>
 
