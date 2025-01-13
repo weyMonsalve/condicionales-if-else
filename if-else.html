@@ -14,14 +14,17 @@
     <h1>Practicas con if-else</h1>
 
     <script>
-        // Calificación de una nota:
+        // Comparación de dos números
 
-        let nota = prompt("ingresa el resultado de la nota entre 0 y 100");
+        let numero1 = prompt("Ingresa el primer numero");
+        let numero2 = prompt("Ingresa el siguiente numero");
 
-        if (nota >= 60) {
-            console.log("Tu nota es " + nota + " Aprobado ");
+        if (numero1 > numero2) {
+            console.log("El primer número (" + numero1 + ") es mayor que el segundo número (" + numero2 + ").");
+        } else if (numero1 < numero2) {
+            console.log("El segundo número (" + numero2 + ") es mayor que el primer número (" + numero1 + ").")
         } else {
-            console.log("tu nota es " + nota + " Reprobado ");
+            console.log("Ambos números son iguales.");
         }
     </script>
 
