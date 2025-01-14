@@ -14,17 +14,14 @@
     <h1>Practicas con if-else</h1>
 
     <script>
-        // Comparación de dos números
+        // Comparación de edades
 
-        let numero1 = prompt("Ingresa el primer numero");
-        let numero2 = prompt("Ingresa el siguiente numero");
+        let edad = parseInt(prompt("Ingresa tu edad: "));
 
-        if (numero1 > numero2) {
-            console.log("El primer número (" + numero1 + ") es mayor que el segundo número (" + numero2 + ").");
-        } else if (numero1 < numero2) {
-            console.log("El segundo número (" + numero2 + ") es mayor que el primer número (" + numero1 + ").")
+        if (edad < 18) {
+            console.log("Aun eres menor de edad tienes: " + edad);
         } else {
-            console.log("Ambos números son iguales.");
+            console.log("Ya eres mayor de edad tienes: " + edad);
         }
     </script>
 
