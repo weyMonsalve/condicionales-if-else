@@ -12,30 +12,31 @@
     <h1>Practicas de ejercicios con switch</h1>
 
     <script>
-        // Tipos de frutas
+        // Operaciones matemáticas
 
-        let fruta = prompt("Ingresa el nombre de una fruta:").toLowerCase();
+        let numero1 = parseFloat(prompt("Ingresa el primer número:"));
+        let numero2 = parseFloat(prompt("Ingresa el segundo número:"));
+        let operacion = prompt("Ingresa una operación (+, -, *, /):");
 
-        switch (fruta) {
-            case 'manzana':
-            case 'pera':
-            case 'durazno':
-                console.log("Esta es una fruta de pepita.")
+        switch (operacion) {
+            case '+':
+                console.log("Resultado: " + (numero1 + numero2));
                 break;
-            case 'naranja':
-            case 'limón':
-            case 'mandarina':
-                console.log("Esta es una fruta cítrica.")
+            case '-':
+                console.log("Resultado: " + (numero1 - numero2));
                 break;
-            case 'plátano':
-            case 'mango':
-            case 'papaya':
-                console.log("Esta es una fruta tropical.")
+            case '*':
+                console.log("Resultado: " + (numero1 * numero2));
                 break;
-
+            case '/':
+                if (numero2 !== 0) {
+                    console.log("Resultado: " + (numero1 / numero2));
+                } else {
+                    console.log("No se puede dividir por cero.");
+                }
+                break;
             default:
-                console.log("Fruta no reconocida.");
-
+                console.log("Operación no válida.");
         }
     </script>
 
