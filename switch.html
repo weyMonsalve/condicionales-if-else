@@ -12,35 +12,29 @@
     <h1>Practicas de ejercicios con switch</h1>
 
     <script>
-        // Días de la semana
+        // Calificación con letras
 
-        let dia = parseInt(prompt("Ingresa un numero del 1 al 7."));
+        let calificacion = prompt("Ingresa tu calificación (A, B, C, D, F):").toUpperCase();
 
-        switch (dia) {
-            case 1:
-                console.log("Lunes")
+        switch (calificacion) {
+            case 'A':
+                console.log("Excelente")
                 break;
-            case 2:
-                console.log("Martes")
+            case 'B':
+                console.log("Muy Bien")
                 break;
-            case 3:
-                console.log("Miercoles")
+            case 'C':
+                console.log("Bien")
                 break;
-            case 4:
-                console.log("Jueves")
+            case 'D':
+                console.log("Necesita mejorar")
                 break;
-            case 5:
-                console.log("Viernes")
-                break;
-            case 6:
-                console.log("Sabado")
-                break;
-            case 7:
-                console.log("Domingo")
+            case 'E':
+                console.log("Reprobado")
                 break;
 
             default:
-                console.log("Número inválido. Por favor, ingresa un número entre 1 y 7.");
+                console.log("Calificacion no valida");
 
         }
     </script>
