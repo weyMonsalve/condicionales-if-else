@@ -12,29 +12,23 @@
     <h1>Practicas de ejercicios con switch</h1>
 
     <script>
-        // Calificación con letras
+        // Menú de opciones
 
-        let calificacion = prompt("Ingresa tu calificación (A, B, C, D, F):").toUpperCase();
+        let opcion = parseInt(prompt("Selecciona una opción:\n1. Saludar\n2. Despedirse\n3. Mostrar la fecha actual"));
 
-        switch (calificacion) {
-            case 'A':
-                console.log("Excelente")
+        switch (opcion) {
+            case 1:
+                console.log("¡Hola! ¿Cómo estás?")
                 break;
-            case 'B':
-                console.log("Muy Bien")
+            case 2:
+                console.log("Adiós, que tengas un buen día.")
                 break;
-            case 'C':
-                console.log("Bien")
-                break;
-            case 'D':
-                console.log("Necesita mejorar")
-                break;
-            case 'E':
-                console.log("Reprobado")
+            case 3:
+                console.log("La fecha actual es: " + new Date().toLocaleDateString())
                 break;
 
             default:
-                console.log("Calificacion no valida");
+                console.log("Opción no válida.");
 
         }
     </script>
