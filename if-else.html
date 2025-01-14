@@ -14,14 +14,18 @@
     <h1>Practicas con if-else</h1>
 
     <script>
-        // Comparación de edades
+        // Verificación de múltiplos
 
-        let edad = parseInt(prompt("Ingresa tu edad: "));
+        let numero = parseInt(prompt("Ingresa un numero: "));
 
-        if (edad < 18) {
-            console.log("Aun eres menor de edad tienes: " + edad);
+        if (numero % 3 === 0 && numero % 5 === 0) {
+            console.log("El numero es multiplo de 3 y de 5.");
+        } else if (numero % 3 === 0) {
+            console.log("El numero es multiplo de 3.");
+        } else if (numero % 5 === 0) {
+            console.log("El numero es multiplo de 5.");
         } else {
-            console.log("Ya eres mayor de edad tienes: " + edad);
+            console.log("El numero nos es multiplo de 3 ni de 5.")
         }
     </script>
 
