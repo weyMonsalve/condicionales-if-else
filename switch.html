@@ -12,23 +12,29 @@
     <h1>Practicas de ejercicios con switch</h1>
 
     <script>
-        // Menú de opciones
+        // Tipos de frutas
 
-        let opcion = parseInt(prompt("Selecciona una opción:\n1. Saludar\n2. Despedirse\n3. Mostrar la fecha actual"));
+        let fruta = prompt("Ingresa el nombre de una fruta:").toLowerCase();
 
-        switch (opcion) {
-            case 1:
-                console.log("¡Hola! ¿Cómo estás?")
+        switch (fruta) {
+            case 'manzana':
+            case 'pera':
+            case 'durazno':
+                console.log("Esta es una fruta de pepita.")
                 break;
-            case 2:
-                console.log("Adiós, que tengas un buen día.")
+            case 'naranja':
+            case 'limón':
+            case 'mandarina':
+                console.log("Esta es una fruta cítrica.")
                 break;
-            case 3:
-                console.log("La fecha actual es: " + new Date().toLocaleDateString())
+            case 'plátano':
+            case 'mango':
+            case 'papaya':
+                console.log("Esta es una fruta tropical.")
                 break;
 
             default:
-                console.log("Opción no válida.");
+                console.log("Fruta no reconocida.");
 
         }
     </script>
