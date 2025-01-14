@@ -12,12 +12,15 @@
     <h1>Practicas de ejercicios con for</h1>
 
     <script>
-        // Tablas de multiplicar
+        // Factorial de un número
 
-        let numero = 3;
-        for (let i = 1; i <= 10; i++) {
-            console.log(`${numero} x ${i} = ${numero * i}`);
+        let n = 10;
+        let factorial = 1;
+
+        for (let i = 1; i <= n; i++) {
+            factorial *= i;
         }
+        console.log(`El factorial de ${n} es: ${factorial}`);
     </script>
 
 </body>
