@@ -14,18 +14,15 @@
     <h1>Practicas con if-else</h1>
 
     <script>
-        // Verificación de múltiplos
+        // Verificación de contraseña
 
-        let numero = parseInt(prompt("Ingresa un numero: "));
+        let contraseña = prompt("Ingresa la contraseña");
+        let contraseñaCorrecta = "1234";
 
-        if (numero % 3 === 0 && numero % 5 === 0) {
-            console.log("El numero es multiplo de 3 y de 5.");
-        } else if (numero % 3 === 0) {
-            console.log("El numero es multiplo de 3.");
-        } else if (numero % 5 === 0) {
-            console.log("El numero es multiplo de 5.");
+        if (contraseña === contraseñaCorrecta) {
+            console.log("Tu contraseña es correcta.");
         } else {
-            console.log("El numero nos es multiplo de 3 ni de 5.")
+            console.log("Tu contraseña es incorrecta.");
         }
     </script>
 
