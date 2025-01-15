@@ -16,15 +16,18 @@
         //     // Bloque de código a ejecutar
         // }
 
-        //   Ejercicio: Usar while para encontrar múltiplos de 7
+        //   Ejercicio: Usar while para encontrar el factorial de un número
 
+        let numero = 5;
+        let factorial = 1;
         let i = 1;
-        while (i <= 100) {
-            if (i % 7 === 0) {
-                console.log(i);
-            }
+
+        while (i <= numero) {
+            factorial *= i;
             i++;
+
         }
+        console.log("El factorial de: " + numero + " es " + factorial);
     </script>
 
 </body>
