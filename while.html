@@ -16,17 +16,19 @@
         //     // Bloque de código a ejecutar
         // }
 
-        //  Sumar los números de un arreglo
+        //  Contar cuántos números negativos hay en un arreglo
 
-        let arreglo = [1, 2, 3, 4, 5];
-        let suma = 0;
+        let arreglo = [1, -2, 3, -4, 5, -6, 7];
+        let contadorNegativos = 0;
         let i = 0;
 
         while (i < arreglo.length) {
-            suma += arreglo[i];
+            if (arreglo[i] < 0) {
+                contadorNegativos++;
+            }
             i++;
         }
-        console.log("La suma total es:", suma);
+        console.log("El número de números negativos es:", contadorNegativos);
     </script>
 
 </body>
