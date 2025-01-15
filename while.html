@@ -16,14 +16,21 @@
         //     // Bloque de código a ejecutar
         // }
 
-        //   Imprimir números pares del 2 hasta 10
+        //  Contar cuántas veces aparece un número en un arreglo
 
-        let numero = 2;
+        let arreglo = [1, 2, 3, 4, 3, 5, 3, 6, 3];
+        let numeroBuscado = 3;
+        let contador = 0;
 
-        while (numero <= 10) {
-            console.log(numero)
-            numero += 2;
+        let i = 0;
+
+        while (i < arreglo.length) {
+            if (arreglo[i] === numeroBuscado) {
+                contador++;
+            }
+            i++;
         }
+        console.log("El número", numeroBuscado, "aparece", contador, "veces en el arreglo.");
     </script>
 
 </body>
