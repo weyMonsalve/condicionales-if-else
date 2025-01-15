@@ -16,16 +16,17 @@
         //     // Bloque de código a ejecutar
         // }
 
-        //  Imprimir los primeros 10 números impares
+        //  Sumar los números de un arreglo
 
-        let i = 1;
-        let contador = 0;
+        let arreglo = [1, 2, 3, 4, 5];
+        let suma = 0;
+        let i = 0;
 
-        while (contador < 10) {
-            console.log(i);
-            i += 2;
-            contador++
+        while (i < arreglo.length) {
+            suma += arreglo[i];
+            i++;
         }
+        console.log("La suma total es:", suma);
     </script>
 
 </body>
