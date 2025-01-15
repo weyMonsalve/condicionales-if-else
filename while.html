@@ -16,21 +16,16 @@
         //     // Bloque de código a ejecutar
         // }
 
-        //  Contar cuántas veces aparece un número en un arreglo
+        //  Imprimir los primeros 10 números impares
 
-        let arreglo = [1, 2, 3, 4, 3, 5, 3, 6, 3];
-        let numeroBuscado = 3;
+        let i = 1;
         let contador = 0;
 
-        let i = 0;
-
-        while (i < arreglo.length) {
-            if (arreglo[i] === numeroBuscado) {
-                contador++;
-            }
-            i++;
+        while (contador < 10) {
+            console.log(i);
+            i += 2;
+            contador++
         }
-        console.log("El número", numeroBuscado, "aparece", contador, "veces en el arreglo.");
     </script>
 
 </body>
