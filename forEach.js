@@ -4,15 +4,15 @@
 // Aquí haces algo con 'elemento'
 // });
 
-// Ejercicio: 
+// Ejercicio: Calcular el promedio: Escribe un programa que recorra un array de números, 
+// sume todos los valores, y luego calcule el promedio. Imprime el promedio al final.
 
-let numeros = [3, -7, 5, -2, -9, 8, -4];
-let numerosNegativos = 0;
+let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let suma = 0;
 
 numeros.forEach(function(numero) {
-    if (numero < 0) {
-        numerosNegativos += numero;
-    }
-
+    suma += numero;
 });
-console.log("La suma total de los numeros negativos es: ", numerosNegativos);
+const promedio = suma / numeros.length;
+
+console.log('El promedio es:', promedio);
