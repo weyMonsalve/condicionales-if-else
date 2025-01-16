@@ -4,14 +4,11 @@
 // Aquí haces algo con 'elemento'
 // });
 
-// Ejercicio: Duplicar cada número: Usa forEach para recorrer un array de números 
-// y crea un nuevo array que contenga cada número duplicado. Imprime el nuevo array
+// Ejercicio: Imprimir nombres con índice: Dado un array de nombres, utiliza 
+// forEach para imprimir cada nombre junto con su posición en el array (índice).
 
-let numeros = [2, 4, 6, 8, 10];
+let nombres = ["Andres", "Julio", "mauricio", "hector"];
 
-let numerosDuplicados = [];
-
-numeros.forEach(function(numero) {
-    numerosDuplicados.push(numero * 2);
+nombres.forEach(function(nombre, indice) {
+    console.log("nombre: " + nombre, "indice: " + indice);
 });
-console.log("Array con numeros duplicados: ", numerosDuplicados);
