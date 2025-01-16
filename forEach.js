@@ -4,12 +4,17 @@
 // Aquí haces algo con 'elemento'
 // });
 
-// Sumar todos los números en un array
+// Ejercicio: Contar palabras largas: Crea un programa que recorra un array de palabras y 
+//cuente cuántas palabras tienen más de 5 letras. Imprime el total.
 
-let numeros = [1, 2, 3, 4, 5];
-let suma = 0;
+const palabras = ['elefante', 'casa', 'extraordinario', 'sol', 'mariposa'];
 
-numeros.forEach(function(numero) {
-    suma += numero;
+let contador = 0;
+
+palabras.forEach(function(palabra) {
+    if (palabra.length > 5) {
+        contador++;
+    }
 });
-console.log("La suma de los numeros del array es: " + suma);
+
+console.log('Número de palabras con más de 5 letras:', contador);
