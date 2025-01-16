@@ -4,14 +4,15 @@
 // Aquí haces algo con 'elemento'
 // });
 
-// Ejercicio: Generar un array de cuadrados: Dado un array de números, usa 
-//forEach para crear un nuevo array que contenga el cuadrado de cada número del array original. 
-//Imprime el nuevo array con los cuadrados.
+// Ejercicio: 
 
-let numeros = [2, 4, 6, 8, 10];
-let cuadrados = [];
+let numeros = [3, -7, 5, -2, -9, 8, -4];
+let numerosNegativos = 0;
 
 numeros.forEach(function(numero) {
-    cuadrados.push(numero * numero);
+    if (numero < 0) {
+        numerosNegativos += numero;
+    }
+
 });
-console.log("numeros cuadrados: ", cuadrados);
+console.log("La suma total de los numeros negativos es: ", numerosNegativos);
