@@ -4,18 +4,14 @@
 // Aquí haces algo con 'elemento'
 // });
 
-// Ejercicio: Concatenar nombres: Dado un array de nombres, usa forEach para 
-//concatenar todos los nombres en una sola cadena, separados por comas, y luego imprime 
-// la cadena resultante.
+// Ejercicio: Generar un array de cuadrados: Dado un array de números, usa 
+//forEach para crear un nuevo array que contenga el cuadrado de cada número del array original. 
+//Imprime el nuevo array con los cuadrados.
 
-const nombres = ['Ana', 'Carlos', 'Beatriz', 'David', 'Elena'];
-let cadenaConcatenada = '';
+let numeros = [2, 4, 6, 8, 10];
+let cuadrados = [];
 
-nombres.forEach(function(nombre, indice) {
-    cadenaConcatenada += nombre;
-    if (indice < nombres.length - 1) {
-        cadenaConcatenada += ', ';
-    }
+numeros.forEach(function(numero) {
+    cuadrados.push(numero * numero);
 });
-
-console.log('Nombres concatenados:', cadenaConcatenada);
+console.log("numeros cuadrados: ", cuadrados);
