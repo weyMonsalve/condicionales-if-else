@@ -4,17 +4,14 @@
 // Aquí haces algo con 'elemento'
 // });
 
-// Ejercicio: Contar palabras largas: Crea un programa que recorra un array de palabras y 
-//cuente cuántas palabras tienen más de 5 letras. Imprime el total.
+// Ejercicio: Duplicar cada número: Usa forEach para recorrer un array de números 
+// y crea un nuevo array que contenga cada número duplicado. Imprime el nuevo array
 
-const palabras = ['elefante', 'casa', 'extraordinario', 'sol', 'mariposa'];
+let numeros = [2, 4, 6, 8, 10];
 
-let contador = 0;
+let numerosDuplicados = [];
 
-palabras.forEach(function(palabra) {
-    if (palabra.length > 5) {
-        contador++;
-    }
+numeros.forEach(function(numero) {
+    numerosDuplicados.push(numero * 2);
 });
-
-console.log('Número de palabras con más de 5 letras:', contador);
+console.log("Array con numeros duplicados: ", numerosDuplicados);
